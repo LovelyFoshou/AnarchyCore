@@ -6,7 +6,7 @@ A plugin for the anarchy servers
 #### Features
 **_P.S.: Features often disabled, open it in config file please_**
 1. Duplications
-- Chicken Dupe: Get the shulker box and right-click the chicken, then chicken will spawn the shulker-box like chicken. Need permission: `anarchy.dupe.chicken`
+- Chicken Dupe: Get the shulker box and right-click the chicken, then chicken will spawn the shulker-box like spawn egg. Need permission: `anarchy.dupe.chicken`
 - Command Dupe: Execute the command `/dupe`, then you'll get more items. Need permission: `anarchy.dupe.command`
 - Donkey Dupe: Kill donkey, inventory times. Need permission: `anarchy.dupe.donkey`
 - Item Frame Dupe: Rotate the item, get more them. Need permission: `anarchy.dupe.frame`
