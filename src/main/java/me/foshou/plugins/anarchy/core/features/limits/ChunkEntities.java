@@ -1,6 +1,7 @@
-package me.foshou.plugins.anarchy.core.limits;
+package me.foshou.plugins.anarchy.core.features.limits;
 
 import me.foshou.plugins.anarchy.core.Main;
+
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

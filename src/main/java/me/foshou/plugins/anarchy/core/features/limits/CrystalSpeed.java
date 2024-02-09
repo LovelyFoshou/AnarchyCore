@@ -1,19 +1,20 @@
-package me.foshou.plugins.anarchy.core.limits;
+package me.foshou.plugins.anarchy.core.features.limits;
 
 import me.foshou.plugins.anarchy.core.Main;
 import org.bukkit.entity.EnderCrystal;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
 
 import java.util.HashMap;
 
 public class CrystalSpeed implements Listener {
 
+
     public static HashMap<String, Long> breaking = new HashMap<>();
+
+
     @EventHandler
     public void onEnderCrystalBreak(EntityDamageByEntityEvent event) {
         if (!Main.config.getBoolean("limits.CrystalSpeed.enable")) return;

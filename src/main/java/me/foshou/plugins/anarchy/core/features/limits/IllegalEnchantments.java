@@ -1,15 +1,13 @@
-package me.foshou.plugins.anarchy.core.limits;
+package me.foshou.plugins.anarchy.core.features.limits;
 
 import me.foshou.plugins.anarchy.core.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.ItemStack;
-
-import java.util.function.BiConsumer;
 
 public class IllegalEnchantments implements Listener {
     @EventHandler

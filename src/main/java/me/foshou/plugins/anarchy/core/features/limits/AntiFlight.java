@@ -1,4 +1,5 @@
-package me.foshou.plugins.anarchy.core.limits;
+package me.foshou.plugins.anarchy.core.features.limits;
+
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -7,9 +8,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 
-import java.net.http.WebSocket;
-
 public class AntiFlight implements Listener {
+
+
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent event) {
         if(event.getPlayer().hasPermission("anarchy.limits.bypass")) return;

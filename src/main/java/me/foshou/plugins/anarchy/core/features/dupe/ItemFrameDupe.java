@@ -1,4 +1,4 @@
-package me.foshou.plugins.anarchy.core.dupe;
+package me.foshou.plugins.anarchy.core.features.dupe;
 
 import me.foshou.plugins.anarchy.core.Main;
 import org.bukkit.entity.EntityType;

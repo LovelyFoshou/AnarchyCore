@@ -1,4 +1,4 @@
-package me.foshou.plugins.anarchy.core.dupe;
+package me.foshou.plugins.anarchy.core.features.dupe;
 
 import me.foshou.plugins.anarchy.core.Main;
 import org.bukkit.Bukkit;
@@ -10,7 +10,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.Plugin;
 
 import java.util.Objects;
 
