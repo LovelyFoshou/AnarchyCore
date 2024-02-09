@@ -1,0 +1,24 @@
+name: AnarchyCore
+version: '${version}'
+main: me.foshou.plugins.anarchy.core.Main
+api-version: '1.19'
+authors: [Sunshine_Light_]
+description: A Plugin for Anarchy Servers.
+permissions:
+  anarchy.dupe.chicken:
+    default: op
+    description: Chicken Dupe Permission
+  anarchy.dupe.donkey:
+    default: op
+    description: Donkey Dupe Permission
+  anarchy.dupe.shulker:
+    default: op
+    description: Shulker Box Dupe Permission
+  anarchy.dupe.frame:
+    default: op
+    description: Item Frame Dupe Permission
+  anarchy.dupe.command:
+    default: op
+    description: Command Dupe Permission
+  anarchy.limits.bypass:
+    default: op
