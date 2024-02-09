@@ -25,6 +25,6 @@ limits:
   AntiFlight:
     enable: false
   IllegalEnchantments: # 俗称32k
-    enable: false
+    enable: false # true op
     DropperBypass: true
 
