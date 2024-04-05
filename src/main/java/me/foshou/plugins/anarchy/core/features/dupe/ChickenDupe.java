@@ -22,30 +22,7 @@ public class ChickenDupe implements Listener {
         Player player = event.getPlayer();
         Chicken chicken = (Chicken) event.getRightClicked();
         ItemStack item = player.getInventory().getItemInMainHand();
-        switch (item.getType()) {
-            case SHULKER_BOX:
-            case BLACK_SHULKER_BOX:
-            case BROWN_SHULKER_BOX:
-            case BLUE_SHULKER_BOX:
-            case CYAN_SHULKER_BOX:
-            case GRAY_SHULKER_BOX:
-            case RED_SHULKER_BOX:
-            case LIME_SHULKER_BOX:
-            case PINK_SHULKER_BOX:
-            case GREEN_SHULKER_BOX:
-            case WHITE_SHULKER_BOX:
-            case ORANGE_SHULKER_BOX:
-            case PURPLE_SHULKER_BOX:
-            case YELLOW_SHULKER_BOX:
-            case MAGENTA_SHULKER_BOX:
-            case LIGHT_BLUE_SHULKER_BOX:
-            case LIGHT_GRAY_SHULKER_BOX:
-                System.out.println("A Player is duping use chicken!");
-                break;
-
-            default:
-                return;
-        }
+        if(!item.getType().toString().toLowerCase().contains("shulker_box")) return;
 
         chicken.setCustomName(ChatColor.translateAlternateColorCodes('&', "&6&lNow Duping: ")+Objects.requireNonNull(item.getItemMeta()).getDisplayName());
         Bukkit.getScheduler().runTaskTimer(

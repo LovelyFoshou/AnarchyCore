@@ -28,7 +28,7 @@ A plugin for the anarchy servers
 #### Tips
 
 1.  No `/reload`, Just `/restart`.
-2.  You can edit the code, but don't steal the code.
+2.  You can edit the code, but don't steal or rob the code.
 3.  Some wrong, take issues.
 
 ### Thanks

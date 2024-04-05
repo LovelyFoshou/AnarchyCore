@@ -15,7 +15,7 @@ dupe:
     enable: false
     times: 4
 
-limits:
+limits: # Bypass permissions: anarchy.limits.bypass
   CrystalSpeed:
     enable: false
     max_period: 50 # millisecond 毫秒
@@ -25,6 +25,6 @@ limits:
   AntiFlight:
     enable: false
   IllegalEnchantments: # 俗称32k
-    enable: false # true op
+    enable: false # true
     DropperBypass: true
 

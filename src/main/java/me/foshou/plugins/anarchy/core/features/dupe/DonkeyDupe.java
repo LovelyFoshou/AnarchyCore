@@ -19,7 +19,6 @@ public class DonkeyDupe implements Listener {
             for (int i = 0; i < donkey.getInventory().getSize(); i++) {
                 donkey.getWorld().dropItem(donkey.getLocation(), Objects.requireNonNull(donkey.getInventory().getItem(i)));
             }
-            System.out.println("A player using donkey to duping.");
         } else if (event.getEntity() instanceof Llama llama) {
             for (int i = 0; i < llama.getInventory().getSize(); i++) {
                 llama.getWorld().dropItem(llama.getLocation(), Objects.requireNonNull(llama.getInventory().getItem(i)));

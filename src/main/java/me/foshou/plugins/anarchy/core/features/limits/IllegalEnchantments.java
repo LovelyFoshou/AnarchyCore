@@ -14,7 +14,7 @@ public class IllegalEnchantments implements Listener {
     public void onGet(InventoryClickEvent event) {
         if (!(Main.config.getBoolean("limits.IllegalEnchantments.enable"))) return;
         if(event.getWhoClicked().hasPermission("anarchy.limits.bypass")) return;
-        if (!Main.config.getBoolean("anarchy.limits.IllegalEnchantments.DropperBypass")) {
+        if (!Main.config.getBoolean("limits.IllegalEnchantments.DropperBypass")) {
             ItemStack i = event.getCurrentItem();
             i.getEnchantments().forEach(((enchantment, integer) -> {
                 if (enchantment.getStartLevel()<integer) {
@@ -24,11 +24,13 @@ public class IllegalEnchantments implements Listener {
         } else {
             if (!event.getClickedInventory().getType().equals(InventoryType.DROPPER)) {
                 ItemStack i = event.getCurrentItem();
-                i.getEnchantments().forEach(((enchantment, integer) -> {
-                    if (enchantment.getStartLevel()<integer) {
-                        event.getCurrentItem().setType(Material.AIR);
-                    }
-                }));
+                if (i != null) {
+                    i.getEnchantments().forEach(((enchantment, integer) -> {
+                        if (enchantment.getStartLevel()<integer) {
+                            event.getCurrentItem().setType(Material.AIR);
+                        }
+                    }));
+                }
             }
         }
     }

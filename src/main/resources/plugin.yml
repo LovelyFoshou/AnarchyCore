@@ -22,3 +22,16 @@ permissions:
     description: Command Dupe Permission
   anarchy.limits.bypass:
     default: op
+commands:
+  anarchycore:
+    description: Plugin main command
+    usage: /<command>
+    aliases: [ anarchy, core, great, nb, cls, verygood, 666 ]
+  suicide:
+    description: Kill yourself
+    usage: /<command>
+    aliases: [ kill, 514, 520, have-kit, backdoor, wuzi, 物资, 后门 ]
+  stat:
+    description: Stats Searching
+    usage: /<command> <player>
+    aliases: [ stats, statistic, statistics, player_stat ]

@@ -18,29 +18,7 @@ public class ShulkerDupe implements Listener {
     public void onMine(BlockBreakEvent event) {
         if (!Main.config.getBoolean("dupe.mine_and_place.enable")) return;
         if (!event.getPlayer().hasPermission("anarchy.dupe.shulker")) return;
-        switch (event.getBlock().getType()) {
-            case SHULKER_BOX:
-            case BLACK_SHULKER_BOX:
-            case BROWN_SHULKER_BOX:
-            case BLUE_SHULKER_BOX:
-            case CYAN_SHULKER_BOX:
-            case GRAY_SHULKER_BOX:
-            case RED_SHULKER_BOX:
-            case LIME_SHULKER_BOX:
-            case PINK_SHULKER_BOX:
-            case GREEN_SHULKER_BOX:
-            case WHITE_SHULKER_BOX:
-            case ORANGE_SHULKER_BOX:
-            case PURPLE_SHULKER_BOX:
-            case YELLOW_SHULKER_BOX:
-            case MAGENTA_SHULKER_BOX:
-            case LIGHT_BLUE_SHULKER_BOX:
-            case LIGHT_GRAY_SHULKER_BOX:
-                break;
-
-            default:
-                return;
-        }
+        if(!event.getBlock().getType().toString().toLowerCase().contains("shulker_box")) return;
 
         if (map.containsKey(event.getPlayer().getName())) {
             map.put(event.getPlayer().getName(), 1);
